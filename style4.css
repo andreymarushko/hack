@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #f7f5e8;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 8px;
+  }
+  
+  .Kalendar {
+    background-color: #ffd966;
+    color: #333;
+  }
+  .container {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  /* Стиль заголовка */
+  h2 { 
+    text-align: center; 
+    color: #333; }
+
+  /* Календарь */
+  .calendar { display: grid; 
+    grid-template-columns: 
+    repeat(7, 1fr); 
+    gap: 5px; }
+  .calendar div { 
+    padding: 15px; 
+    text-align: center; 
+    cursor: pointer; 
+    background-color: #ffeb3b; 
+    border-radius: 50%; color: #333; 
+    font-weight: bold; 
+    transition: background-color 0.3s; }
+  .calendar div:hover { 
+    background-color: #ffc107; }
+
+  /* Список событий */
+  .events { 
+    margin-top: 20px; }
+  .event { 
+    padding: 10px; 
+    border-bottom: 1px solid #ddd; 
+    font-size: 1.1em; 
+    color: #666; }
+  .event.hidden { 
+    display: none; } /* Скрываем ненужные события */
+
+  /* Кнопки для фильтрации */
+  .filter-btn { display: inline-block; padding: 10px; background-color: #ffeb3b; border: none; color: #333; font-size: 1em; font-weight: bold; cursor: pointer; border-radius: 5px; margin: 5px 5px; transition: background-color 0.3s; }
+  .filter-btn:hover { background-color: #ffc107; }
