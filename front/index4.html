@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Управление челленджами</title>
+  <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index5.html">Челленджи</a>
+  <a href="index3.html">Профиль</a>
+  <a href="index4.html" class="Kalendar">Календарь</a>
+  <a href="index2.html" class="admin-button">Управление</a>
+  <a href="index.html">Выйти</a>
+</div>
+<div class="container">
+    <h2>Календарь событий</h2>
+  
+    <!-- Календарь -->
+    <div class="calendar" id="calendar">
+      <!-- Дни календаря (простой вариант без дней недели) -->
+      <div data-date="2024-10-01">1</div>
+      <div data-date="2024-10-02">2</div>
+      <div data-date="2024-10-03">3</div>
+      <div data-date="2024-10-04">4</div>
+      <div data-date="2024-10-05">5</div>
+      <div data-date="2024-10-06">6</div>
+      <div data-date="2024-10-07">7</div>
+      <!-- Продолжить для всех дней месяца -->
+      <div data-date="2024-10-31">31</div>
+    </div>
+  
+    <!-- Кнопки для фильтрации по типу события -->
+    <button class="filter-btn" onclick="filterByType('all')">Все события</button>
+    <button class="filter-btn" onclick="filterByType('single')">Одиночные</button>
+    <button class="filter-btn" onclick="filterByType('group')">Групповые</button>
+  
+    <!-- Список событий -->
+    <div class="events" id="events">
+      <div class="event" data-date="2024-10-01" data-type="single">Тренировка для одного</div>
+      <div class="event" data-date="2024-10-02" data-type="group">Командное обучение</div>
+      <div class="event" data-date="2024-10-03" data-type="single">Одиночное чтение книг</div>
+      <div class="event" data-date="2024-10-03" data-type="group">Групповое обсуждение проекта</div>
+      <div class="event" data-date="2024-10-04" data-type="single">Индивидуальная консультация</div>
+      <div class="event" data-date="2024-10-05" data-type="group">Тимбилдинг на природе</div>
+      <div class="event" data-date="2024-10-06" data-type="single">Сеанс медитации</div>
+      <div class="event" data-date="2024-10-07" data-type="group">Общий брейншторминг</div>
+      <div class="event" data-date="2024-10-07" data-type="single">Одиночная тренировка в спортзале</div>
+      <div class="event" data-date="2024-10-07" data-type="group">Круглый стол для команды</div>
+    </div>
+  
+    <!-- Кнопка для сброса фильтра по дате -->
+    <button class="filter-btn" onclick="showAllEvents()">Показать все события</button>
+  </div>
+<script src="script4.js"></script>
+</body>
+</html>

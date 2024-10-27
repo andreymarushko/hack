@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #f7f5e8;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.admin-button {
+  background-color: #ffd966;
+  color: #333;
+}
+
+.container {
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page {
+    display: none;
+    width: 80%;
+    max-width: 600px;
+}
+
+.active {
+    display: block;
+}
+
+#error-message {
+    color: red;
+}
+
+#challenge-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#challenge-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #FFECB3;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+#challenge-list li span {
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-color: #FFB74D;
+    color: #8B6A00;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-challenge,
+#logout-btn {
+    background-color: #FFD966;
+    color: #8B6A00;
+    margin: 10px 0;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+}
+
+.error-message {
+    color: red;
+}
